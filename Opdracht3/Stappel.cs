@@ -10,7 +10,7 @@ namespace Opdracht3
     {
         private List<T> Stapellijst = new List<T>();
         private List<T> Stapellijst2 = new List<T>();
-        
+         
         public void DeStapel(T toevoegen)
         {
             Stapellijst.Add(toevoegen);
