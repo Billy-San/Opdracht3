@@ -54,6 +54,9 @@
             this.TypeMeubel = new System.Windows.Forms.Label();
             this.Prijs = new System.Windows.Forms.Label();
             this.PrijsBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Stapelint
@@ -80,6 +83,7 @@
             this.StapelintToevoegen.TabIndex = 2;
             this.StapelintToevoegen.Text = "Toevoegen";
             this.StapelintToevoegen.UseVisualStyleBackColor = true;
+            this.StapelintToevoegen.Click += new System.EventHandler(this.StapelintToevoegen_Click);
             // 
             // StapelIntVerwijderen
             // 
@@ -89,6 +93,7 @@
             this.StapelIntVerwijderen.TabIndex = 3;
             this.StapelIntVerwijderen.Text = "Verwijderen";
             this.StapelIntVerwijderen.UseVisualStyleBackColor = true;
+            this.StapelIntVerwijderen.Click += new System.EventHandler(this.StapelIntVerwijderen_Click);
             // 
             // LeegmakenStapelint
             // 
@@ -98,6 +103,7 @@
             this.LeegmakenStapelint.TabIndex = 4;
             this.LeegmakenStapelint.Text = "Leegmaken";
             this.LeegmakenStapelint.UseVisualStyleBackColor = true;
+            this.LeegmakenStapelint.Click += new System.EventHandler(this.LeegmakenStapelint_Click);
             // 
             // ShowListStapelInt
             // 
@@ -107,6 +113,7 @@
             this.ShowListStapelInt.TabIndex = 5;
             this.ShowListStapelInt.Text = "Show List";
             this.ShowListStapelInt.UseVisualStyleBackColor = true;
+            this.ShowListStapelInt.Click += new System.EventHandler(this.ShowListStapelInt_Click);
             // 
             // SearchStapelInt
             // 
@@ -116,6 +123,7 @@
             this.SearchStapelInt.TabIndex = 6;
             this.SearchStapelInt.Text = "Search";
             this.SearchStapelInt.UseVisualStyleBackColor = true;
+            this.SearchStapelInt.Click += new System.EventHandler(this.SearchStapelInt_Click);
             // 
             // CopyStapelInt
             // 
@@ -125,6 +133,7 @@
             this.CopyStapelInt.TabIndex = 7;
             this.CopyStapelInt.Text = "Copy";
             this.CopyStapelInt.UseVisualStyleBackColor = true;
+            this.CopyStapelInt.Click += new System.EventHandler(this.CopyStapelInt_Click);
             // 
             // CopyStapelVanString
             // 
@@ -134,6 +143,7 @@
             this.CopyStapelVanString.TabIndex = 15;
             this.CopyStapelVanString.Text = "Copy";
             this.CopyStapelVanString.UseVisualStyleBackColor = true;
+            this.CopyStapelVanString.Click += new System.EventHandler(this.CopyStapelVanString_Click);
             // 
             // SearchStapelVanString
             // 
@@ -179,6 +189,7 @@
             this.toevoegenStapelVanString.TabIndex = 10;
             this.toevoegenStapelVanString.Text = "Toevoegen";
             this.toevoegenStapelVanString.UseVisualStyleBackColor = true;
+            this.toevoegenStapelVanString.Click += new System.EventHandler(this.toevoegenStapelVanString_Click);
             // 
             // StapelVanStringBox
             // 
@@ -204,6 +215,7 @@
             this.MeubelCopy.TabIndex = 23;
             this.MeubelCopy.Text = "Copy";
             this.MeubelCopy.UseVisualStyleBackColor = true;
+            this.MeubelCopy.Click += new System.EventHandler(this.MeubelCopy_Click);
             // 
             // MeubelSearch
             // 
@@ -213,6 +225,7 @@
             this.MeubelSearch.TabIndex = 22;
             this.MeubelSearch.Text = "Search";
             this.MeubelSearch.UseVisualStyleBackColor = true;
+            this.MeubelSearch.Click += new System.EventHandler(this.MeubelSearch_Click);
             // 
             // MeubelShowList
             // 
@@ -222,6 +235,7 @@
             this.MeubelShowList.TabIndex = 21;
             this.MeubelShowList.Text = "Show List";
             this.MeubelShowList.UseVisualStyleBackColor = true;
+            this.MeubelShowList.Click += new System.EventHandler(this.MeubelShowList_Click);
             // 
             // MeubelLeegmaken
             // 
@@ -231,6 +245,7 @@
             this.MeubelLeegmaken.TabIndex = 20;
             this.MeubelLeegmaken.Text = "Leegmaken";
             this.MeubelLeegmaken.UseVisualStyleBackColor = true;
+            this.MeubelLeegmaken.Click += new System.EventHandler(this.MeubelLeegmaken_Click);
             // 
             // MeubelVerwijderen
             // 
@@ -240,6 +255,7 @@
             this.MeubelVerwijderen.TabIndex = 19;
             this.MeubelVerwijderen.Text = "Verwijderen";
             this.MeubelVerwijderen.UseVisualStyleBackColor = true;
+            this.MeubelVerwijderen.Click += new System.EventHandler(this.MeubelVerwijderen_Click);
             // 
             // MeubelToevoegen
             // 
@@ -249,6 +265,7 @@
             this.MeubelToevoegen.TabIndex = 18;
             this.MeubelToevoegen.Text = "Toevoegen";
             this.MeubelToevoegen.UseVisualStyleBackColor = true;
+            this.MeubelToevoegen.Click += new System.EventHandler(this.MeubelToevoegen_Click);
             // 
             // MeubelBox
             // 
@@ -282,11 +299,41 @@
             this.PrijsBox.Size = new System.Drawing.Size(150, 31);
             this.PrijsBox.TabIndex = 25;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(58, 406);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 25);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Integers:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(58, 442);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 25);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Strings:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(58, 479);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 25);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Meubels: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 543);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PrijsBox);
             this.Controls.Add(this.Prijs);
             this.Controls.Add(this.MeubelCopy);
@@ -349,5 +396,8 @@
         private Label TypeMeubel;
         private Label Prijs;
         private TextBox PrijsBox;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }
